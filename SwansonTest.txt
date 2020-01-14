@@ -1,0 +1,94 @@
+programdeif = "IF X>Y THEN X:=0 ELSE Y:=0 ENDIF"
+programdewhile = "WHILE X>Y DO X:=X-1 END"
+programdeseq = "X:=1; Y:=2; Z:=3"
+--Test programs
+programex = "WHILE X > Y DO X := X - 1; Z := Z * Z END"
+--rando
+
+program1 = 
+    IF X>Z 
+    THEN 
+        IF X>Y 
+        THEN 
+            X:=0 
+        ELSE 
+            Y:=0 
+        ENDIF 
+    ELSE 
+        Z:=X-0-Y 
+    ENDIF
+
+
+--pow function; ret X^Y = Z
+
+program2 = 
+    Z := 1; 
+    IF 1 > Y 
+    THEN 
+        Z := 1 
+    ELSE 
+        WHILE Y > 0 
+        DO 
+            Z := Z * X; 
+            Y := Y - 1 
+        END 
+    ENDIF
+
+
+--rando
+
+program3 = 
+    WHILE X > 0 
+    DO 
+        TY := Y; 
+        WHILE TY > 0 
+        DO 
+            Z := Z - 0 - Z; 
+            TY := TY - 1 
+        END; 
+        Z := Z * Z; 
+        X := X - 1 
+    END
+
+
+--even function. ret 1 if X is even and ret 0 if X is odd
+
+program4 = 
+    Z := X;
+    WHILE Z>0 
+    DO 
+        Z := Z - 2 
+    END; 
+    IF Z > 0 - 1 
+    THEN 
+        Z := 0 
+    ELSE 
+        Z := 1 
+    ENDIF
+
+
+--div by 2: x is param, y is ret, z is temp
+
+program5 = 
+    Z := X; 
+    WHILE Z > 0 
+    DO 
+        Z := Z - 1; 
+        IF X > Z * 2 - 1 
+        THEN 
+            IF Z * 2 > X - 1 
+            THEN 
+                Y := Z; 
+                Z := 0 
+            ELSE 
+                Y := Y 
+            ENDIF 
+        ELSE 
+        Y := Y 
+        ENDIF;
+    END
+
+
+--collatz
+--program6 = "Y := 1; WHILE X > 1 DO Z := X; " ++ program4 ++ "IF ENDIF END"
+
